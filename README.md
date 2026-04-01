@@ -1,3 +1,0 @@
-# NovoAmbientesADS
-
-Alteração do README
