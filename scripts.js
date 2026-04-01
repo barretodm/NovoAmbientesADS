@@ -23,5 +23,17 @@ function calcularIMC(altura, peso) {
   }
 }
 
-// Exemplo de uso:
-calcularIMC(1.75, 70);
+// Leitura dos valores do teclado
+const alturaInput = prompt("Digite sua altura (em metros, ex: 1.75):");
+const pesoInput = prompt("Digite seu peso (em kg, ex: 70):");
+
+// Converter para número
+const altura = parseFloat(alturaInput);
+const peso = parseFloat(pesoInput);
+
+// Validar os valores
+if (!isNaN(altura) && !isNaN(peso) && altura > 0 && peso > 0) {
+  calcularIMC(altura, peso);
+} else {
+  console.log("Valores inválidos! Digite números positivos para altura e peso.");
+}
