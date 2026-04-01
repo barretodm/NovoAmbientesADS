@@ -1,5 +1,3 @@
-console.log("Hello, World!");
-
 // Função para calcular IMC
 function calcularIMC(altura, peso) {
   // altura deve estar em metros (ex: 1.75)
@@ -35,5 +33,7 @@ const peso = parseFloat(pesoInput);
 if (!isNaN(altura) && !isNaN(peso) && altura > 0 && peso > 0) {
   calcularIMC(altura, peso);
 } else {
-  console.log("Valores inválidos! Digite números positivos para altura e peso.");
+  console.log(
+    "Valores inválidos! Digite números positivos para altura e peso:",
+  );
 }
